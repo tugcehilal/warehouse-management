@@ -1,5 +1,8 @@
 package com.fulfilment.application.monolith.warehouses.domain.models;
+import lombok.Data;
 
+
+@Data
 public class Location {
   public String identification;
 
