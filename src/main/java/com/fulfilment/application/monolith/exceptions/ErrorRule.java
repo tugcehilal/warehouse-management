@@ -18,7 +18,13 @@ public enum ErrorRule {
 
     MAX_WAREHOUSES_LIMIT_REACHED(Response.Status.CONFLICT, "The maximum number of allowable warehouses has been reached", ErrorCode.MAXWAREHOUSENUMBERREACHED),
     BUSINESS_UNIT_CODE_MISMATCH(Response.Status.CONFLICT, "The provided BusinessUnitCode does not match the expected value", ErrorCode.BUSINESSUNITCODENOTMATCH),
-    LOCATION_CAPACITY_EXCEEDED(Response.Status.CONFLICT, "The warehouse at the specified location has exceeded its maximum capacity", ErrorCode.WAREHOUSELOCATIONEXCEEDEDMAXCAPACITY);
+    LOCATION_CAPACITY_EXCEEDED(Response.Status.CONFLICT, "The warehouse at the specified location has exceeded its maximum capacity", ErrorCode.WAREHOUSELOCATIONEXCEEDEDMAXCAPACITY),
+    WAREHOUSE_PREVIOUSLY_ARCHIVED(Response.Status.CONFLICT, "The warehouse associated with the provided BusinessUnitCode has been archived earlier", ErrorCode.WAREHOUSEPREVIOUSLYARCHIVED),
+    INSUFFICIENT_WAREHOUSE_CAPACITY(Response.Status.CONFLICT, "The capacity of the new warehouse is insufficient to store the stock from the previous warehouse", ErrorCode.INSUFFICIENTWAREHOUSECAPACITY),
+    WAREHOUSE_STOCK_MISMATCH(Response.Status.CONFLICT, "The inventory in the new warehouse does not align with the stock in the previous warehouse", ErrorCode.WAREHOUSESTOCKMISMATCH);
+
+
+
 
 
 

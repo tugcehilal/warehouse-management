@@ -13,7 +13,7 @@ import static com.fulfilment.application.monolith.exceptions.ErrorRule.LOCATION_
 
 @ApplicationScoped
 @RequiredArgsConstructor
-public class CapacityByLocationValidator implements CreateUpdateWareHouseValidator {
+public class CapacityValidator implements CreateUpdateWareHouseValidator {
     private final LocationResolver locationResolver;
 
     @Override

@@ -11,7 +11,7 @@ import static com.fulfilment.application.monolith.exceptions.ErrorRule.WAREHOUSE
 
 @ApplicationScoped
 @RequiredArgsConstructor
-public class BuValidator implements CreateUpdateWareHouseValidator {
+public class BuCodeValidator implements CreateUpdateWareHouseValidator {
 
     private final WarehouseStore warehouseStore;
 

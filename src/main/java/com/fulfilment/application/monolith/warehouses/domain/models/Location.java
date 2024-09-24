@@ -1,8 +1,13 @@
 package com.fulfilment.application.monolith.warehouses.domain.models;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 
 @Data
+@NoArgsConstructor
+@EqualsAndHashCode
 public class Location {
   public String identification;
 
