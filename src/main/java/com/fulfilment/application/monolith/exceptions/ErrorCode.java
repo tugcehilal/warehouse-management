@@ -1,0 +1,17 @@
+package com.fulfilment.application.monolith.exceptions;
+
+
+public enum ErrorCode {
+    BODYMISSING,
+    FIELDISREQUIRED,
+
+    WAREHOUSEALREADYEXIST,
+    WAREHOUSENOTFOUND,
+
+    MAXWAREHOUSENUMBERREACHED,
+
+    WAREHOUSELOCATIONEXCEEDEDMAXCAPACITY,
+    BUSINESSUNITCODENOTMATCH,
+
+
+}
